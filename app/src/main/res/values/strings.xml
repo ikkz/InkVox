@@ -18,7 +18,7 @@
     <string name="permission_explanation">InkVox uses the microphone only when you start recording. After granting permission, return to the text field and tap record again.</string>
     <string name="grant_permission">Grant microphone permission</string>
     <string name="open_settings">Open app settings</string>
-    <string name="ready">Tap to speak</string>
+    <string name="ready">Ready</string>
     <string name="connecting">Connecting</string>
     <string name="listening">Listening</string>
     <string name="processing">Processing</string>
@@ -33,5 +33,6 @@
     <string name="retry">Try again</string>
     <string name="cancel">Cancel</string>
     <string name="backspace">Backspace</string>
+    <string name="switch_keyboard">Switch keyboard</string>
     <string name="switch_ime">Switch input method</string>
 </resources>

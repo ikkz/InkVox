@@ -7,7 +7,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.inkvox"
+        applicationId = "fun.ikkz.inkvox"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

@@ -585,6 +585,7 @@ class InkVoxInputMethodService : InputMethodService() {
                         JSONObject()
                             .put("format", "pcm")
                             .put("sample_rate", SAMPLE_RATE)
+                            .put("heartbeat", true)
                             .put("language_hints", JSONArray().put("zh").put("en")),
                     )
                     .put("input", JSONObject()),
@@ -626,7 +627,7 @@ class InkVoxInputMethodService : InputMethodService() {
         private const val SAMPLE_RATE = 16_000
         private const val AUDIO_CHUNK_BYTES = 3_200
         private const val CONNECTION_TIMEOUT_MILLIS = 10_000L
-        private const val MAX_RECORDING_MILLIS = 60_000L
+        private const val MAX_RECORDING_MILLIS = 5 * 60_000L
         private const val PROCESSING_TIMEOUT_MILLIS = 15_000L
     }
 }

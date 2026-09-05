@@ -18,7 +18,7 @@
     <string name="permission_explanation">InkVox 仅在你主动录音时使用麦克风。授权后请返回输入框并再次点击录音。</string>
     <string name="grant_permission">授予麦克风权限</string>
     <string name="open_settings">打开应用设置</string>
-    <string name="ready">点击说话</string>
+    <string name="ready">就绪</string>
     <string name="connecting">正在连接</string>
     <string name="listening">正在聆听</string>
     <string name="processing">正在转换</string>
@@ -33,5 +33,6 @@
     <string name="retry">重试</string>
     <string name="cancel">取消</string>
     <string name="backspace">退格</string>
+    <string name="switch_keyboard">换键盘</string>
     <string name="switch_ime">切换输入法</string>
 </resources>
