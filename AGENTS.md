@@ -31,8 +31,17 @@ InkVox is a lightweight voice-first input method for Android e-ink devices. Its 
 ## Build and Verification
 
 - Assemble debug APK: `./gradlew assembleDebug`
+- Verify the release build: `./gradlew check assembleRelease`
 - Run static checks and tests: `./gradlew check`
 - Clean workspace: `./gradlew clean`
+
+## Release Process
+
+- Every push to `main` runs the release verification build in GitHub Actions without publishing an artifact.
+- Before a release, increment `versionCode`, set `versionName`, and push those changes to `main`.
+- Create and push a tag matching `v<versionName>` (for example, `v0.1.0`). The workflow builds a signed APK, verifies its signature, and publishes it to GitHub Releases with generated release notes.
+- The repository must define `RELEASE_KEYSTORE_BASE64`, `RELEASE_KEYSTORE_PASSWORD`, `RELEASE_KEY_ALIAS`, and `RELEASE_KEY_PASSWORD` as GitHub Actions secrets.
+- Never commit a keystore or signing credential. Keep a secure backup of the release keystore; losing it prevents compatible upgrades.
 
 ## Validation Priorities
 
