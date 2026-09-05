@@ -585,7 +585,7 @@ class InkVoxInputMethodService : InputMethodService() {
                         JSONObject()
                             .put("format", "pcm")
                             .put("sample_rate", SAMPLE_RATE)
-                            .put("language_hints", JSONArray().put("zh")),
+                            .put("language_hints", JSONArray().put("zh").put("en")),
                     )
                     .put("input", JSONObject()),
             )
