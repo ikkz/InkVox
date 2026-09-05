@@ -325,7 +325,7 @@ class InkVoxInputMethodService : InputMethodService() {
             )
             contentDescription = text
         }
-        cancelButton?.visibility = if (active) View.VISIBLE else View.GONE
+        cancelButton?.visibility = if (active) View.VISIBLE else View.INVISIBLE
         backspaceButton?.isEnabled = !active
         switchButton?.isEnabled = !active
         if (state != ImeState.LISTENING) durationView?.text = ""
