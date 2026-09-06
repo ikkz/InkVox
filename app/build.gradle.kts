@@ -8,12 +8,14 @@ android {
     namespace = "com.inkvox"
     compileSdk = 36
 
+    androidResources.ignoreAssetsPattern += ":PublicSuffixDatabase.list"
+
     defaultConfig {
         applicationId = "fun.ikkz.inkvox"
         minSdk = 26
         targetSdk = 36
-        versionCode = 2
-        versionName = "0.1.1"
+        versionCode = 3
+        versionName = "0.1.2"
     }
 
     if (releaseKeystorePath != null) {
